@@ -12,7 +12,7 @@ Il ya quelques problèmes dans le dataset. Certains ligne du train set son tirer
 # Solution
 
 ## 1- Preprocessing
-  Pour obtenir plus de data on va créer de nouvelle image à partir des existants. On va faire ce qu'on appele du Data enhancement. On prend une image est on modifie par exemple la   luminosité, le contraste, etc. En plus d'enrichir le dataset, elle permet aussi au modèle de ne pas trop se spécifier et donc de pour géneraliser. Ce qui va permet d'obtenir de   bon resultat.
+  Pour obtenir plus de data on va créer de nouvelle image à partir des existants. On va faire ce qu'on appele du Data enhancement. On prend une image est on modifie par exemple la   luminosité, le contraste, etc. En plus d'enrichir le dataset, elle permet aussi au modèle de ne pas trop se spécialiser et donc de pouvoir géneraliser. Ce qui va permet d'obtenir de   bon resultat.
 
 ## 2 - Model 
   Ici on a utilisé le méthode de knowledge distillation. Cette méthode consiste a utilise les poids(weight) d'un gros modèle entrainner sur un petit modèle. Cela permet de faire   un "transfert de connaissance". Pour cela on va utilise le modèle pré-entrainer **seresnextnet50**. 
